@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import './App.css'
-import { BrowserRouter as Router ,Route, Routes } from 'react-router-dom'
+import { HashRouter ,Route, Routes } from 'react-router-dom'
 import Hero from './Hero';
 
 
 function App() {
   return (
-      <Router>
+      <HashRouter>
         <Routes>
           <Route path = '/' Component = {Hero} />
         </Routes>
-      </Router>
+      </HashRouter>
   );
 }
 
